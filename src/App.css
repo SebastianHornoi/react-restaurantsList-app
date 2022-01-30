@@ -1,38 +1,43 @@
 .App {
-  text-align: center;
+  position: relative;
+  width: 100%;height: 100vh;
+  display: flex;flex-direction: column;
+}
+.header{width: 100%;height: 15%;}
+.content{
+  width: 100%;height: 85%;
+  overflow: scroll;
+  display: flex;flex-wrap: wrap;justify-content: center;align-items: center;
+  box-sizing: border-box;padding: 20px;
+}
+.content::-webkit-scrollbar{display: none}
+
+.restaurant__box{
+  width: 250px;height: 250px;
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.28);
+  display: flex;flex-direction: column;
+  margin: 20px;border-radius: 9px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.restaurant__box__background{width: 100%;height: 50%;}
+.restaurant__box__background img{width: 100%;height: 100%;object-fit: cover;border-radius: 9px 9px 0 0;}
+.restaurant__box__content{
+  width: 100%;height: 50%;
+  display: flex;justify-content: center;align-items: center;
+  flex-direction: column;text-align: center;
 }
+.restaurant__box__content h3, p, h5{margin: 3px;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* seleziona ristorante */
+.select__restaurants{
+  position: absolute;top: 0;left: 0;
+  height: 100%;width: 100%;
+  background-color: rgba(0, 0, 0, 0.842);
+  display: flex;flex-direction: column;
+  justify-content: center;align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.select__restaurants h3{color: #fff;}
+.select__restaurants button{padding: 10px 15px;border-radius: 9px;margin: 20px;border: none;}
+.buttons-container{display: flex;align-items: center;}
+.select__restaurants__logo{filter: invert(1);}
