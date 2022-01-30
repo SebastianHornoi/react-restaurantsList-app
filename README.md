@@ -1,5 +1,5 @@
 # RestaurantsList app
-<img src="https://github.com/SebastianHornoi/react-instagram-mini/blob/master/public/img/instagram%20app.png"/>
+<img src="https://github.com/SebastianHornoi/react-restaurantsList-app/blob/master/public/img/restaurants%20app.png"/>
 ### Atenzione: 
 Abbiamo utilizzato il json-server come database, esegueire npm-run-server e poi su un altro terminale npm-run-start
 
